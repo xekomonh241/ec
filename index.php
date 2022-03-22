@@ -681,7 +681,17 @@ require_once($path . '/class/product.php')
         function checklogin() {
             var data = $('#formlogin').serialize();
             $.ajax({
-                url: <?php echo  ?>
+                url: <?php $path.'/lib/checklogin.php' ?>,
+                type: 'POST',
+                data: data,
+                success: function (response) {
+                    if(response == 0){
+                        alert('Login failed');
+                    }
+                    else{
+                        window.location = 'index.php';
+                    }
+                }
             })
         }
     </script>
