@@ -29,7 +29,7 @@
                         <div class="login-content">
                             <h2>Log in</h2>
                             <h3>Log in your account</h3>
-                            <form action="#">
+                            <form action="formlogin">
                                 <input type="text" placeholder="Username">
                                 <input type="password" placeholder="Password">
                                 <div class="remember-forget-wrap">
@@ -41,12 +41,12 @@
                                     <div class="forget-wrap">
                                         <a href="#">Forgot your password?</a>
                                     </div>
-                                </div>
-                                <button type="button">Log in</button>
+                                </div>                               
+                            </form>
+                            <button onclick="checklogin()" type="button">Log in</button>
                                 <div class="member-register">
                                     <p> Not a member? <a href="login.php"> Register now</a></p>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -190,3 +190,5 @@
         </div>
     </div>
     <!-- Modal end -->
+
+    
